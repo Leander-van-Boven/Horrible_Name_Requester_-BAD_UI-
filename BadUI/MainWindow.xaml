@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BadUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="311" Width="789" ResizeMode="NoResize">
     <Grid>
-        
+        <TextBox x:Name="namebox" HorizontalAlignment="Left" Height="30" Margin="107,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="402" IsEnabled="False" FontSize="20"/>
+        <Label Content="Your Name:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="button_2" Content="backspace" HorizontalAlignment="Left" Margin="417,58,0,0" VerticalAlignment="Top" Width="92" Click="Button_2_Click" Height="40"/>
+        <Button x:Name="b_97" Content="" HorizontalAlignment="Left" Margin="12,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_98" Content="" HorizontalAlignment="Left" Margin="57,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_99" Content="" HorizontalAlignment="Left" Margin="102,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_100" Content="" HorizontalAlignment="Left" Margin="147,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_101" Content="" HorizontalAlignment="Left" Margin="192,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_102" Content="" HorizontalAlignment="Left" Margin="237,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_103" Content="" HorizontalAlignment="Left" Margin="282,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_104" Content="" HorizontalAlignment="Left" Margin="327,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_105" Content="" HorizontalAlignment="Left" Margin="372,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_106" Content="" HorizontalAlignment="Left" Margin="417,58,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_107" Content="" HorizontalAlignment="Left" Margin="20,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_108" Content="" HorizontalAlignment="Left" Margin="65,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_109" Content="" HorizontalAlignment="Left" Margin="110,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_110" Content="" HorizontalAlignment="Left" Margin="155,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_111" Content="" HorizontalAlignment="Left" Margin="200,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_112" Content="" HorizontalAlignment="Left" Margin="245,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_113" Content="" HorizontalAlignment="Left" Margin="290,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_114" Content="" HorizontalAlignment="Left" Margin="335,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_115" Content="" HorizontalAlignment="Left" Margin="380,104,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_116" Content="" HorizontalAlignment="Left" Margin="44,148,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_117" Content="" HorizontalAlignment="Left" Margin="89,148,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_118" Content="" HorizontalAlignment="Left" Margin="134,148,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_119" Content="" HorizontalAlignment="Left" Margin="179,148,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_120" Content="" HorizontalAlignment="Left" Margin="224,148,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_121" Content="" HorizontalAlignment="Left" Margin="269,148,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="b_122" Content="" HorizontalAlignment="Left" Margin="314,148,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
+        <Button x:Name="button_1" Content="submit" HorizontalAlignment="Left" Margin="425,104,0,0" VerticalAlignment="Top" Width="84" Height="40" Click="Button_1_Click"/>
+        <Label x:Name="messagelabel" Content="" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Height="79" Width="499" Foreground="Lime" FontSize="20"/>
+        <Grid x:Name="CaptchaGrid" HorizontalAlignment="Left" Height="260" Margin="514,12,0,0" VerticalAlignment="Top" Width="260">
+            <Label x:Name="captchalabel" Content="" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="240" FontSize="16"/>
+            <Slider x:Name="CaptchaSlider" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="240" AutoToolTipPlacement="TopLeft"/>
+            <Button x:Name="SubmitCaptcha" Content="Submit" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Width="240" Height="40" Click="SubmitCaptcha_Click"/>
+            <Label Content="Proof you are not a robot:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Separator Margin="0,29,0,229" VerticalAlignment="Center" Height="2" Background="#FFDDDDDD" Panel.ZIndex="1" Foreground="#FFDDDDDD"/>
+        </Grid>
     </Grid>
 </Window>
