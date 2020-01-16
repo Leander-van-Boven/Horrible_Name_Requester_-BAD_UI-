@@ -19,14 +19,16 @@ namespace BadUI
     /// </summary>
     public partial class Dialogbox : Window
     {
-        bool b1_submit;
-        int depth;
+        double minimum = 5.0;   // How many dialogs the victim mimimal should accept. (double to prevent integer division)
+        bool b1_submit;         // Determines whether button1 should be the submit button.
+        int depth;              // How many dialogboxes are already open
+        Random rnd;
         public Dialogbox(int _depth)
         {
             depth = _depth;
             InitializeComponent();
-            contentblock.Content = "Are you sure you " + GenerateContent(depth);
-            Random rnd = new Random();
+            contentblock.Content = "Are you very sure you " + GenerateContent(depth);
+            rnd = new Random();
             b1_submit = rnd.Next(2) == 0;
             if (b1_submit)
             {
@@ -48,25 +50,13 @@ namespace BadUI
             }
             else
             {
-                return " are sure you" + GenerateContent(d - 1);
+                return " are very sure you" + GenerateContent(d - 1);
             }
         }
 
         private void Button_1_Click(object sender, RoutedEventArgs e)
         {
-            if (b1_submit)
-            {
-                if (depth == 10)
-                {
-                    DialogResult = true;
-                    Close();
-                }
-                else
-                {
-                    DialogResult = new Dialogbox(depth + 1).ShowDialog();
-                    Close();
-                }
-            }
+            if (b1_submit) TrySubmit();
             else
             {
                 DialogResult = false;
@@ -81,18 +71,22 @@ namespace BadUI
                 DialogResult = false;
                 Close();
             }
+            else TrySubmit();
+        }
+
+        private void TrySubmit()
+        {
+            double val = rnd.NextDouble();
+            double tobeat = depth == 0 ? minimum : minimum / depth;
+            if (val > tobeat)
+            {
+                DialogResult = true;
+                Close();
+            }
             else
             {
-                if (depth == 10)
-                {
-                    DialogResult = true;
-                    Close();
-                }
-                else
-                {
-                    DialogResult = new Dialogbox(depth + 1).ShowDialog();
-                    Close();
-                }
+                DialogResult = new Dialogbox(depth + 1).ShowDialog();
+                Close();
             }
         }
 

@@ -38,7 +38,7 @@
         <Button x:Name="b_122" Content="" HorizontalAlignment="Left" Margin="314,148,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Keybutton_CLick"/>
         <Button x:Name="button_1" Content="submit" HorizontalAlignment="Left" Margin="425,104,0,0" VerticalAlignment="Top" Width="84" Height="40" Click="Button_1_Click"/>
         <Label x:Name="messagelabel" Content="" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Height="79" Width="499" Foreground="Lime" FontSize="20"/>
-        <Grid x:Name="CaptchaGrid" HorizontalAlignment="Left" Height="260" Margin="514,12,0,0" VerticalAlignment="Top" Width="260">
+        <Grid x:Name="CaptchaGrid" HorizontalAlignment="Left" Height="260" Margin="514,12,0,0" VerticalAlignment="Top" Width="260" Visibility="Hidden">
             <Label x:Name="captchalabel" Content="" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="240" FontSize="16"/>
             <Slider x:Name="CaptchaSlider" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="240" AutoToolTipPlacement="TopLeft"/>
             <Button x:Name="SubmitCaptcha" Content="Submit" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Width="240" Height="40" Click="SubmitCaptcha_Click"/>
