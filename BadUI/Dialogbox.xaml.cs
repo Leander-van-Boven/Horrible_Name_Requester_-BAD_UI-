@@ -25,7 +25,7 @@ namespace BadUI
         {
             depth = _depth;
             InitializeComponent();
-            contentblock.Content = "Are you sure you want to submit " + GenerateContent(depth);
+            contentblock.Content = "Are you sure you " + GenerateContent(depth);
             Random rnd = new Random();
             b1_submit = rnd.Next(2) == 0;
             if (b1_submit)
@@ -44,11 +44,11 @@ namespace BadUI
         {
             if (d == 0)
             {
-                return "?";
+                return " want to submit?";
             }
             else
             {
-                return "that you are sure you want to submit" + GenerateContent(d - 1);
+                return " are sure you" + GenerateContent(d - 1);
             }
         }
 
